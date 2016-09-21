@@ -19,7 +19,7 @@ if is_service_enabled horizon template; then
     if [[ "$1" == "stack" && "$2" == "pre-install" ]]; then
         # Set up system services
         echo_summary "Configuring system services Template"
-        install_package cowsay
+        # install_package cowsay
 
     elif [[ "$1" == "stack" && "$2" == "install" ]]; then
         # Perform installation of service source
