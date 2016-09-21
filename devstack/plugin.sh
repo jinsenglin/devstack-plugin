@@ -1,20 +1,51 @@
-# This is the main for plugin.sh
-if is_service_enabled jinsenglin; then
+# plugin.sh - DevStack plugin.sh dispatch script template
+
+function install_template {
+    :
+}
+
+function init_template {
+    :
+}
+
+function configure_template {
+    :
+}
+
+# check for service enabled
+if is_service_enabled template; then
+
     if [[ "$1" == "stack" && "$2" == "pre-install" ]]; then
-        echo_summary "Configuring system services for jinsenglin"
+        # Set up system services
+        echo_summary "Configuring system services Template"
+        install_package cowsay
+
     elif [[ "$1" == "stack" && "$2" == "install" ]]; then
-        echo_summary "Installing jinsenglin"
+        # Perform installation of service source
+        echo_summary "Installing Template"
+        install_template
+
     elif [[ "$1" == "stack" && "$2" == "post-config" ]]; then
-        echo_summary "Configuring jinsenglin"
+        # Configure after the other layer 1 and 2 services have been configured
+        echo_summary "Configuring Template"
+        configure_template
+
     elif [[ "$1" == "stack" && "$2" == "extra" ]]; then
-        echo_summary "Initializing jinsenglin"
+        # Initialize and start the template service
+        echo_summary "Initializing Template"
+        init_template
     fi
 
     if [[ "$1" == "unstack" ]]; then
-        echo_summary "Shutting Down jinsenglin"
+        # Shut down template services
+        # no-op
+        :
     fi
 
     if [[ "$1" == "clean" ]]; then
-        echo_summary "Cleaning jinsenglin"
+        # Remove state and transient data
+        # Remember clean.sh first calls unstack.sh
+        # no-op
+        :
     fi
 fi
