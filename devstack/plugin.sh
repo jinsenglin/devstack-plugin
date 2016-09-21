@@ -1,7 +1,6 @@
 # This is the main for plugin.sh
 if is_service_enabled jinsenglin; then
     if [[ "$1" == "stack" && "$2" == "pre-install" ]]; then
-        # Set up other services
         echo_summary "Configuring system services for jinsenglin"
     elif [[ "$1" == "stack" && "$2" == "install" ]]; then
         echo_summary "Installing jinsenglin"
