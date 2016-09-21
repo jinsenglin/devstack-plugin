@@ -4,7 +4,7 @@ Enabling jinsenglin in DevStack
 
 1. Download DevStack::
 
-    git clone https://git.openstack.org/openstack-dev/devstack.git
+    git clone https://github.com/openstack-dev/devstack.git
     cd devstack
 
 2. Add this repo as an external repository in ``local.conf`` file::
