@@ -15,7 +15,7 @@ Enabling mytheme in DevStack
    To use stable branches, make sure devstack is on that branch, and specify
    the branch name to enable_plugin, for example::
 
-    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin stable/mitaka
+    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin mytheme/stable/mitaka
 
    There are some options, such as MYTHEME_ICO, defined in
    ``devstack-plugin/devstack/settings``, they can be used to configure the installation
