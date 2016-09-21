@@ -1,5 +1,5 @@
 =========================
-Enabling mytheme in DevStack
+Enabling mypanel in DevStack
 =========================
 
 1. Download DevStack::
@@ -10,14 +10,14 @@ Enabling mytheme in DevStack
 2. Add this repo as an external repository in ``local.conf`` file::
 
     [[local|localrc]]
-    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin
+    enable_plugin mypanel https://github.com/jinsenglin/devstack-plugin
 
    To use stable branches, make sure devstack is on that branch, and specify
    the branch name to enable_plugin, for example::
 
-    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin mytheme/stable/mitaka
+    enable_plugin mypanel https://github.com/jinsenglin/devstack-plugin mypanel/stable/mitaka
 
-   There are some options, such as MYTHEME_ICO, defined in
+   There are some options, such as MYPANEL_REPO, defined in
    ``devstack-plugin/devstack/settings``, they can be used to configure the installation
    of mytheme. If you don't want to use their default value, you can set a new
    one in ``local.conf``.
@@ -28,7 +28,8 @@ Enabling mytheme in DevStack
 Sample local.conf
 =========================
 
-    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin mytheme/stable/mitaka
-    MYTHEME_ICO=http://git.cloudcube.com.tw:8091/jimlin/theme-images/raw/master/favicon.icon
-    MYTHEME_LOGO=http://git.cloudcube.com.tw:8091/jimlin/theme-images/raw/master/logo.png
-    MYTHEME_LOGO_SPLASH=http://git.cloudcube.com.tw:8091/jimlin/theme-images/raw/master/logo-splash.png
+    enable_plugin mypanel https://github.com/jinsenglin/devstack-plugin mypanel/stable/mitaka
+    MYPANEL_REPO=https://github.com/jinsenglin/horizon-plugin
+    MYPANEL_REPO_BRANCH=mypanel/stable/mitaka
+    MYPANEL_REPO_DIR_NAME=mypanel
+    
