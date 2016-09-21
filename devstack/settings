@@ -4,5 +4,5 @@ enable_service mypanel
 # Default options
 MYPANEL_REPO=${MYPANEL_REPO:-https://github.com/jinsenglin/horizon-plugin}
 MYPANEL_BRANCH=${MYPANEL_BRANCH:-mypanel/stable/mitaka}
-MYPANEL_DIR=${MYPANEL_DIR:=$DEST/mypanel}
+MYPANEL_DIR=${MYPANEL_DIR:=$DEST/mypanel_ui}
 MYPANEL_ENABLED_FILE=${MYPANEL_ENABLED_FILE:-_50_mypanel.py}
