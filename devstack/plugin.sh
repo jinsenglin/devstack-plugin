@@ -18,7 +18,7 @@ if is_service_enabled horizon template; then
 
     if [[ "$1" == "stack" && "$2" == "pre-install" ]]; then
         # Set up system services
-        echo_summary "Configuring system services Template"
+        echo_summary "Configuring system services for Template"
         # install_package cowsay
 
     elif [[ "$1" == "stack" && "$2" == "install" ]]; then
@@ -39,14 +39,13 @@ if is_service_enabled horizon template; then
 
     if [[ "$1" == "unstack" ]]; then
         # Shut down template services
-        # no-op
-        :
+        echo_summary "Unstacking Template"
+        rm -rf $HORIZON_DIR/openstack_dashboard/themes/mytheme
     fi
 
     if [[ "$1" == "clean" ]]; then
         # Remove state and transient data
         # Remember clean.sh first calls unstack.sh
         echo_summary "Cleaning Template"
-        rm -rf $HORIZON_DIR/openstack_dashboard/themes/mytheme
     fi
 fi
