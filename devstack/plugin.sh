@@ -9,7 +9,8 @@ function init_template {
 }
 
 function configure_template {
-    :
+    local local_settings=$HORIZON_DIR/openstack_dashboard/local/local_settings.py
+    _horizon_config_set $local_settings "" JIM_DUMMY True
 }
 
 # check for service enabled
@@ -45,7 +46,7 @@ if is_service_enabled horizon template; then
     if [[ "$1" == "clean" ]]; then
         # Remove state and transient data
         # Remember clean.sh first calls unstack.sh
-        
+        echo_summary "Cleaning Template"
         rm -rf $HORIZON_DIR/openstack_dashboard/themes/mytheme
     fi
 fi
