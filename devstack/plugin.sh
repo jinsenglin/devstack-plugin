@@ -5,12 +5,12 @@ function prepare_mypanel {
 }
 
 function install_mypanel {
-    git_clone $MYPANEL_REPO $MYPANEL_REPO_DIR_NAME $MYPANEL_REPO_BRANCH
+    git_clone $MYPANEL_REPO $MYPANEL_DIR $MYPANEL_BRANCH
 }
 
 function configure_mypanel {
-    setup_develop $MYPANEL_REPO_DIR_NAME
-    cp $MYPANEL_REPO_DIR_NAME/mypanel_ui/enabled/$MYPANEL_ENABLED_FILE $HORIZON_DIR/openstack_dashboard/local/enabled
+    setup_develop $MYPANEL_DIR
+    cp $MYPANEL_DIR/mypanel/enabled/$MYPANEL_ENABLED_FILE $HORIZON_DIR/openstack_dashboard/local/enabled
 }
 
 function init_mypanel {
