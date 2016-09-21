@@ -36,3 +36,5 @@ Sample local.conf
     
     MYPANEL_REPO_DIR_NAME=mypanel
     
+    MYPANEL_ENABLED_DIR=mypanel_ui/enabled/
+    
