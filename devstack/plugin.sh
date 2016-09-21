@@ -10,7 +10,7 @@ function init_template {
 
 function configure_template {
     local local_settings=$HORIZON_DIR/openstack_dashboard/local/local_settings.py
-    _horizon_config_set $local_settings "" JIM_DUMMY _horizon_config_set $local_settings "" AVAILABLE_THEMES \[\(\'default\',\'Default\',\'themes/default\'\),\]
+    _horizon_config_set $local_settings "" AVAILABLE_THEMES \[\(\'default\',\'Default\',\'themes/default\'\),\]
 }
 
 # check for service enabled
