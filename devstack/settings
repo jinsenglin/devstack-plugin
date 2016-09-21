@@ -1,5 +1,5 @@
-# Turn on all the jinsenglin services by default
-enable_service jinsenglin
+# Turn on all the template services by default
+enable_service template
 
 # Default options
 JIM_DUMMY=${JIM_DUMMY:-NOTHING}
