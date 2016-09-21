@@ -19,6 +19,7 @@ function init_mypanel {
 
 function unstack_mypanel {
     rm -f $HORIZON_DIR/openstack_dashboard/local/enabled/$MYPANEL_ENABLED_FILE
+    rm -f $HORIZON_DIR/openstack_dashboard/local/enabled/${MYPANEL_ENABLED_FILE}c
 }
 
 function clean_mypanel {
