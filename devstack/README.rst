@@ -29,7 +29,10 @@ Sample local.conf
 =========================
 
     enable_plugin mypanel https://github.com/jinsenglin/devstack-plugin mypanel/stable/mitaka
+    
     MYPANEL_REPO=https://github.com/jinsenglin/horizon-plugin
+    
     MYPANEL_REPO_BRANCH=mypanel/stable/mitaka
+    
     MYPANEL_REPO_DIR_NAME=mypanel
     
