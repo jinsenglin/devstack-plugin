@@ -32,9 +32,7 @@ Sample local.conf
     
     MYPANEL_REPO=https://github.com/jinsenglin/horizon-plugin
     
-    MYPANEL_REPO_BRANCH=mypanel/stable/mitaka
+    MYPANEL_BRANCH=mypanel/stable/mitaka
     
-    MYPANEL_REPO_DIR_NAME=mypanel
-    
-    MYPANEL_ENABLED_DIR=mypanel_ui/enabled/
+    MYPANEL_ENABLED_FILE=_50_mypanel.py
     
