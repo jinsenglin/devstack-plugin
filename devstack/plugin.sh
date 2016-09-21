@@ -1,7 +1,7 @@
 # plugin.sh - DevStack plugin.sh dispatch script template
 
 function install_template {
-    :
+    cp -r $HORIZON_DIR/openstack_dashboard/themes/default $HORIZON_DIR/openstack_dashboard/themes/mytheme
 }
 
 function init_template {
@@ -45,7 +45,7 @@ if is_service_enabled template; then
     if [[ "$1" == "clean" ]]; then
         # Remove state and transient data
         # Remember clean.sh first calls unstack.sh
-        # no-op
-        :
+        
+        rm -rf $HORIZON_DIR/openstack_dashboard/themes/mytheme
     fi
 fi
