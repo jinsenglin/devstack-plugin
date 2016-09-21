@@ -1,1 +1,5 @@
+# Turn on all the jinsenglin services by default
+enable_service jinsenglin
+
+# Default options
 JIM_DUMMY=${JIM_DUMMY:-NOTHING}
