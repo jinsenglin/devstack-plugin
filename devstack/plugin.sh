@@ -6,11 +6,16 @@ function prepare_mytheme {
 
 function install_mytheme {
     cp -r $HORIZON_DIR/openstack_dashboard/themes/default $HORIZON_DIR/openstack_dashboard/themes/mytheme
+    mkdir $HORIZON_DIR/openstack_dashboard/themes/mytheme/img
+    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/favicon.ico
+    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo.png
+    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo-splash.png
 }
 
 function configure_mytheme {
     local local_settings=$HORIZON_DIR/openstack_dashboard/local/local_settings.py
     _horizon_config_set $local_settings "" AVAILABLE_THEMES \[\(\'default\',\'Default\',\'themes/mytheme\'\),\]
+    _horizon_config_set $local_settings "" SITE_BRANDING "My OpenStack Dashboard"
 }
 
 function init_mytheme {
