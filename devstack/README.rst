@@ -28,7 +28,7 @@ Enabling mytheme in DevStack
 Sample local.conf
 =========================
 
-enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin mytheme/stable/mitaka
-MYTHEME_ICO=https://lh5.googleusercontent.com/IJDKTzSSegNujBS1IZOqNO1zTM_oE4TLViRFLv-APgT83oU9rt08wt2Ki2nkfpllnzvOIE5BTswrGU4=w2880-h1420
-MYTHEME_LOGO=https://lh4.googleusercontent.com/ChzGh4wvWlK1HugUbcLhVHbAxiboGzwqVm8Lyrwnry_xHr-NtrqBnUbBp2NB08toPSKeg6bZFohld6c=w2880-h1420
-MYTHEME_LOGO_SPLASH=https://lh4.googleusercontent.com/aP_t9S0WsK4hYt31cHoDk0I7vaiRfF80CX_MLPiqr9X9S8H_i5ccYl61exJmLKdNYT96fTz5dTWzl2A=w2880-h1420
+    enable_plugin mytheme https://github.com/jinsenglin/devstack-plugin mytheme/stable/mitaka
+    MYTHEME_ICO=https://lh5.googleusercontent.com/IJDKTzSSegNujBS1IZOqNO1zTM_oE4TLViRFLv-APgT83oU9rt08wt2Ki2nkfpllnzvOIE5BTswrGU4=w2880-h1420
+    MYTHEME_LOGO=https://lh4.googleusercontent.com/ChzGh4wvWlK1HugUbcLhVHbAxiboGzwqVm8Lyrwnry_xHr-NtrqBnUbBp2NB08toPSKeg6bZFohld6c=w2880-h1420
+    MYTHEME_LOGO_SPLASH=https://lh4.googleusercontent.com/aP_t9S0WsK4hYt31cHoDk0I7vaiRfF80CX_MLPiqr9X9S8H_i5ccYl61exJmLKdNYT96fTz5dTWzl2A=w2880-h1420
