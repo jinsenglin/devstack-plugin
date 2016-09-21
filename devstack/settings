@@ -1,5 +1,5 @@
 # Turn on all the template services by default
-enable_service template
+enable_service mytheme
 
 # Default options
 JIM_DUMMY=${JIM_DUMMY:-NOTHING}
