@@ -7,9 +7,22 @@ function prepare_mytheme {
 function install_mytheme {
     cp -r $HORIZON_DIR/openstack_dashboard/themes/default $HORIZON_DIR/openstack_dashboard/themes/mytheme
     mkdir $HORIZON_DIR/openstack_dashboard/themes/mytheme/img
-    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/favicon.ico
-    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo.png
-    touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo-splash.png
+    
+    if [ $MYTHEME_ICO == "NOTHING" ]; then
+        touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/favicon.ico
+    else
+        wget $MYTHEME_ICO -O $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/favicon.ico
+    fi
+    if [ $MYTHEME_LOGO == "NOTHING" ]; then
+        touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo.png
+    else
+        wget $MYTHEME_LOGO -O $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo.png
+    fi
+    if [ $MYTHEME_LOGO_SPLASH == "NOTHING" ]; then
+        touch $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo-splash.png
+    else
+        wget $MYTHEME_LOGO_SPLASH -O $HORIZON_DIR/openstack_dashboard/themes/mytheme/img/logo-splash.png
+    fi
 }
 
 function configure_mytheme {
