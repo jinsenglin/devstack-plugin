@@ -28,7 +28,7 @@ function install_mytheme {
 function configure_mytheme {
     local local_settings=$HORIZON_DIR/openstack_dashboard/local/local_settings.py
     _horizon_config_set $local_settings "" AVAILABLE_THEMES \[\(\'default\',\'Default\',\'themes/mytheme\'\),\]
-    _horizon_config_set $local_settings "" SITE_BRANDING "\'My OpenStack Dashboard\'"
+    _horizon_config_set $local_settings "" SITE_BRANDING "'My OpenStack Dashboard'"
 }
 
 function init_mytheme {
